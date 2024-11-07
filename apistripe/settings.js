@@ -1,2 +1,2 @@
-const STRIPE_API_KEY = 'sk_test_51QHYk506Z5F6WerbK3TT4j9K78zUrZAFzI637orycua0vK612bmqwVejXmAUZWenr7wbK7R0Fp7maSpW3YbNQayo00tSkCZhoY';
+const STRIPE_API_KEY = 'sk_test_51QHYk506Z5F6Werb5plOK7iGznfru7fsYrvwhPg3Zaw44WDZgxJxZrScPDR7HjyD0DRRmSXI8TRpnRTLmk4tSQXQ0049MuxRfU';
 module.exports = { STRIPE_API_KEY };

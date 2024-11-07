@@ -3,7 +3,7 @@ const { STRIPE_API_KEY } = require('../settings');
 
 class PaymentsService {
     constructor() {
-        this.stripe = new Stripe(STRIPE_API_KEY, { timeout: 200 });
+        this.stripe = new Stripe(STRIPE_API_KEY, { timeout: 2000 });
     }
 
     async createCheckoutSession(product, quantity) {
@@ -21,8 +21,8 @@ class PaymentsService {
                     quantity: quantity,
                 }],
                 mode: 'payment',
-                success_url: 'http://localhost:3000/success',
-                cancel_url: 'http://localhost:3000/cancel',
+                success_url: 'http://localhost:4000/success',
+                cancel_url: 'http://localhost:4000/cancel',
             });
             return session;
         } catch (error) {
